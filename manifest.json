@@ -1,0 +1,11 @@
+{
+    "name": "No Right Click",
+    "description": "Prevent right click on the page which doesn't prevent right click",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "permissions": ["activeTab", "contextMenus"],
+    "content_scripts": [{
+        "matches": ["*://*/*"],
+        "js": ["content.js"]
+    }]
+}
